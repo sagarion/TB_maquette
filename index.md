@@ -24,7 +24,9 @@ Syntax highlighted code block
 **Bold** and _Italic_ and `Code` text
 
 [Link](url) and ![Image](src)
-[base](https://sagarion.github.io/TBmaquette/base.htm)
+[base](http://sagarion.github.io/TBmaquette/base.htm)
+http://github.com - automatic!
+[GitHub](http://github.com)
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
