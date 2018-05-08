@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>maquette sélection du prix </title>
+</head>
+
+<script type="text/javascript">
+
+	function scanTicket() {
+	  document.getElementById('scanTicket').style.display = "block";
+	  document.getElementById('submit').style.display = "block";
+	  document.getElementById('buttonScan').style.display = "none";
+	  document.getElementById('buttonResetScan').style.display = "block";
+	}
+	function reset() {
+	  document.getElementById('scanTicket').style.display = "none";
+	  document.getElementById('submit').style.display = "none";
+	  document.getElementById('buttonScan').style.display = "block";
+	  document.getElementById('buttonResetScan').style.display = "none";
+	}
+	</script>
+
+<body>
+<center>
+	<h1>justification scan</h1>
+
+	<form action="maquette2Resume.htm">
+	  <label for="price">Prix de la livraison :</label> <input type="number" name="price"> en CHF<br>
+	  </br>
+	  </br>
+	  <div id="scannedState">
+	  <img src="http://img.over-blog-kiwi.com/1/70/62/34/20150820/ob_1e5159_img-20150819-215526939.jpg" 
+			id="scanTicket" alt="ticket_justificatif" height="200" width="200" hidden="true">
+			</br>
+	  <input id="submit" type="submit" value="Submit" hidden="true"></div>
+	</form>
+	</br>
+	 <button id="buttonScan" onclick="scanTicket()">scanner ticket</button>	
+	 <button id="buttonResetScan" onclick="reset()" hidden="true">reset scan du ticket</button>	
+</center>
+</body>
+</html>
