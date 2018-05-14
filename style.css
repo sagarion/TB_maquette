@@ -1,5 +1,6 @@
 
 ul{line-height:200%;}
 body{font-size:16px;}
-body{font-size:200%;} 
-@media(min-width:900px){b{font-size: 100%; color: green}}
+
+@media(min-width:900px){body{font-size: 100%; color: green}}
+@media(max-width:899px){body{font-size: 200%; color: green}}
