@@ -26,8 +26,8 @@
 	<h1>justification scan</h1>
 
 	<form action="maquette2Resume.htm">
-	  <label for="price">Prix de la livraison :</label> <input type="number" name="price"> en CHF<br>
-	  </br>
+	  <p><label for="price">Quel a été le prix de la livraison ?</label></p>
+	  <input type="number" name="price" step="0.05" min="0.00" max="99" required="true"> en CHF<br>
 	  </br>
 	  <div id="scannedState">
 	  <img src="http://img.over-blog-kiwi.com/1/70/62/34/20150820/ob_1e5159_img-20150819-215526939.jpg" 
@@ -37,7 +37,7 @@
 	</form>
 	</br>
 	 <button id="buttonScan" onclick="scanTicket()">scanner le ticket</button>	
-	 <button id="buttonResetScan" onclick="reset()" hidden="true">scaner à nouveau le ticket</button>	
+	 <button id="buttonResetScan" onclick="reset()" hidden="true">recommencer le scan</button>	
 </center>
 </body>
 </html>

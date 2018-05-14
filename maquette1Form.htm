@@ -9,10 +9,14 @@
 	<h1>justification photo 1</h1>
 
 	<form action="maquette1Resume.htm">
-	  <label for="price">Prix de la livraison :</label> <input type="number" name="price" step="0.05" min="0.00" max="99"> en CHF<br>
+	  <p><label for="price">Quel a été le prix de la livraison ?</label></p>
+	  <input type="number" name="price" step="0.05" min="0.00" max="99" required="true"> en CHF<br>
 	  </br>
-	  <input type="file" accept="image/*" capture="camera">
-	  <input type="submit" value="Submit">
+	  <p> Fournissez une photo du ticket justificatif de votre livraison.</p>
+	  <input type="file" accept="image/*" capture="camera" required="true">
+	  </br>
+	  </br>
+	  <input type="submit" value="Valider">
 	</form>
 </center>
 </body>
