@@ -6,18 +6,20 @@
 </head>
 <body>
 <center>
+<form name="paypal" action="maquettePaypalValidation.htm">
 	<h1> ceci est une représensation d'une page de login paypal</h1>
 	
 	</br>
 	<img src="https://cdn-images-1.medium.com/max/640/1*tk56TNWKofHhzlB1igAZbQ.png" 
 		alt="logo_Paypal" height="100" width="140">
 	</br>
-	<p><input name="email" placeholder="E-Mail-Adresse" width="150"></input></p>
-	<p><input name="password" placeholder="Password" width="150"></input></p>
-	<a href="maquettePayPalValidation.htm"><button>login</button></a>
+	<p><input name="email" placeholder="E-Mail-Adresse" width="150" required="true"></input></p>
+	<p><input type="password" name="password" placeholder="Password" width="150" required="true"></input></p>
+	<input id="submit" type="submit" value="login">
 	</br>
 	</br>
 	<a href="www.paypal.com"><button>inscription</button></a>
+	</form>
 </center>
 </body>
 </html>
