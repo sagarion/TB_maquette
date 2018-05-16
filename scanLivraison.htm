@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>maquette sélection du prix </title>
+<link rel="stylesheet" href="style.css" />
+</head>
+
+<script type="text/javascript">
+	function suivant0() {
+	  document.getElementById('zeroProduct').style.display = "none";
+	  document.getElementById('firstProduct').style.display = "block";
+	}
+
+	function suivant1() {
+	  document.getElementById('firstProduct').style.display = "none";
+	  document.getElementById('secondProduct').style.display = "block";
+	}
+	function suivant2() {
+	  document.getElementById('secondProduct').style.display = "none";
+	  document.getElementById('thirdProduct').style.display = "block";
+	}
+	function suivant3() {
+	  document.getElementById('thirdProduct').style.display = "none";
+	  document.getElementById('fourthProduct').style.display = "block";
+	}
+	function suivant4() {
+	  document.getElementById('fourthProduct').style.display = "none";
+	  document.getElementById('fifthProduct').style.display = "block";
+	}
+	function enleveProduct(){
+	  document.getElementById('fifthProduct').style.display = "none";
+	  document.getElementById('sixthProduct').style.display = "block";
+	}
+	</script>
+
+<body>
+<center>
+	<h1>Scan de la livraison</h1>
+    <h3> list de produit livré :</h3>
+	<div id="zeroProduct" style="display:block;" >
+	  <p> aucun produit</p>
+	  </Br></Br></Br>
+	  <button onclick="suivant0()">Etat Suivant</button>
+	  </div>
+	  <div id="firstProduct" style="display:none;" >
+	  <p> --> 1x Produit 124, Magnum Classic <button onclick="">-1</button></p>
+	  <p><a href="livraisonResume.htm"><button>valider livraison</button></a></p>
+	  </Br></Br></Br>
+	  <button onclick="suivant1()">Etat Suivant</button>
+	  </div>
+	  <div id ="secondProduct" style="display:none;">
+	  <p> --> 2x Produit 124, Magnum Classic <button onclick="">-1</button></p>
+	  <p><a href="livraisonResume.htm"><button>valider livraison</button></a></p>
+	  </Br></Br></Br>
+	  <button onclick="suivant2()">Etat Suivant</button>
+	  </div>
+	  <div id ="thirdProduct" style="display:none;">
+	  <p> --> 3x Produit 124, Magnum Classic <button onclick="">-1</button></p>
+	  <p><a href="livraisonResume.htm"><button>valider livraison</button></a></p>
+	  </Br></Br></Br>
+	  <button onclick="suivant3()">Etat Suivant</button>
+	  </div>
+	  <div id ="fourthProduct" style="display:none;">
+	  <p> --> 3x Produit 124, Magnum Classic <button onclick="">-1</button></p>
+	  <p> --> 1x Produit 654, Cornet Fraise-Vanille <button onclick="">-1</button></p>
+	  <p><a href="livraisonResume.htm"><button>valider livraison</button></a></p>
+	  </Br></Br></Br>
+	  <button onclick="suivant4()">Etat Suivant</button>
+	  </div>
+	  <div id ="fifthProduct" style="display:none;">
+	  <p> --> 3x Produit 124, Magnum Classic <button onclick="">-1</button></p>
+	  <p> --> 2x Produit 654, Cornet Fraise-Vanille <button onclick="enleveProduct()">-1</button></p>
+	  <p><a href="livraisonResume.htm"><button>valider livraison</button></a></p>
+	  </div>
+	  <div id ="sixthProduct" style="display:none;">
+	  <p> --> 3x Produit 124, Magnum Classic <button onclick="">-1</button></p>
+	  <p> --> 1x Produit 654, Cornet Fraise-Vanille <button onclick="">-1</button></p>
+	  <p><a href="livraisonResume.htm"><button>valider livraison</button></a></p>
+	  </div>
+	  </br>
+	  <p><a href="hub.htm"><button>retour au Hub</button></a></p>
+</center>
+</body>
+</html>
